@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="834" height="824" viewBox="0 0 834 824">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#152733"/>
+      <stop offset="0.343" stop-color="#142430" stop-opacity="0.945"/>
+      <stop offset="0.95" stop-opacity="0.149"/>
+      <stop offset="1" stop-color="#626e76" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="radial" transform="translate(-1032 -203)">
+    <ellipse id="Ellipse_132" data-name="Ellipse 132" cx="417" cy="412" rx="417" ry="412" transform="translate(1032 203)" fill="url(#radial-gradient)"/>
+    <ellipse id="Ellipse_131" data-name="Ellipse 131" cx="382.5" cy="378" rx="382.5" ry="378" transform="translate(1072 237)" fill="#192f3d"/>
+    <ellipse id="Ellipse_56" data-name="Ellipse 56" cx="347.5" cy="343.5" rx="347.5" ry="343.5" transform="translate(1107 268)" fill="#244459"/>
+    <ellipse id="Ellipse_55" data-name="Ellipse 55" cx="318" cy="314.5" rx="318" ry="314.5" transform="translate(1136 295)" fill="#294e66"/>
+    <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="285.5" cy="283" rx="285.5" ry="283" transform="translate(1170 327)" fill="#336280"/>
+    <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="250" cy="247.5" rx="250" ry="247.5" transform="translate(1205 362)" fill="#386b8c"/>
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="200" cy="198" rx="200" ry="198" transform="translate(1259 411)" fill="#3c7396"/>
+  </g>
+</svg>

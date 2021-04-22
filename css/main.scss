@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
+
+:root {
+  --bred-blue: #1f3b4d;
+  --bred-light-blue: #d0fefe;
+  --bred-dark-blue: #1a303f;
+  --bred-yellow: #f9da6f;
+  --bred-white: #ffff;
+  --bred-mobile-bg-blue-gradient-start: #1f3b4d;
+  --bred-mobile-bg-blue-gradient-end: ##060c0f;
+  --bred-font: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: var(--bred-font);
+  background: radial-gradient(
+    circle,
+    rgba(31, 59, 77, 1) 0%,
+    rgba(6, 12, 15, 1) 75%
+  );
+}
+
+img {
+  width: 100%;
+}
+
+// KEEP AN EYE: this is due to header height and avoid bigger size than 100vh (causes scroll)
+section {
+  height: 90vh;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+
+  h1 {
+    color: var(--bred-yellow);
+    font-size: 1.2rem;
+  }
+  svg {
+    height: 2em;
+    width: 2em;
+  }
+}
+
+//image should be changed due to export error for the lightbulb wire
+.bred-lightbulb-wrapper {
+  .bred-lightbulb {
+    position: relative;
+    bottom: 3em;
+  }
+}
+
+.bred-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+  position: relative;
+  top: -5.5em;
+
+  h2 {
+    color: var(--bred-yellow);
+    line-height: 0;
+  }
+  h3 {
+    color: var(--bred-light-blue);
+    line-height: 0;
+  }
+  span {
+    color: var(--bred-white);
+  }
+
+  svg {
+    padding-top: 1.8em;
+  }
+}
+
+.bred-page-indicator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  top: -4.5em;
+
+  svg {
+    transform: rotate(-90deg);
+    height: 3em;
+    width: 5em;
+  }
+}

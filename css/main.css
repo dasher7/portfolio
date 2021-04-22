@@ -1,1 +1,115 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
+:root {
+  --bred-blue: #1f3b4d;
+  --bred-light-blue: #d0fefe;
+  --bred-dark-blue: #1a303f;
+  --bred-yellow: #f9da6f;
+  --bred-white: #ffff;
+  --bred-mobile-bg-blue-gradient-start: #1f3b4d;
+  --bred-mobile-bg-blue-gradient-end: ##060c0f;
+  --bred-font: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: var(--bred-font);
+  background: radial-gradient(circle, #1f3b4d 0%, #060c0f 75%);
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  height: 90vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 2em;
+}
+
+header h1 {
+  color: var(--bred-yellow);
+  font-size: 1.2rem;
+}
+
+header svg {
+  height: 2em;
+  width: 2em;
+}
+
+.bred-lightbulb-wrapper .bred-lightbulb {
+  position: relative;
+  bottom: 3em;
+}
+
+.bred-slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+  position: relative;
+  top: -5.5em;
+}
+
+.bred-slogan h2 {
+  color: var(--bred-yellow);
+  line-height: 0;
+}
+
+.bred-slogan h3 {
+  color: var(--bred-light-blue);
+  line-height: 0;
+}
+
+.bred-slogan span {
+  color: var(--bred-white);
+}
+
+.bred-slogan svg {
+  padding-top: 1.8em;
+}
+
+.bred-page-indicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -4.5em;
+}
+
+.bred-page-indicator svg {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  height: 3em;
+  width: 5em;
+}
+/*# sourceMappingURL=main.css.map */

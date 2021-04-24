@@ -171,12 +171,12 @@ button {
   font-size: 1.5em;
 }
 
-.bred-lightbulb-wrapper .bred-lightbulb {
+.bred-hero .bred-lightbulb-wrapper .bred-lightbulb {
   position: relative;
   bottom: 3em;
 }
 
-.bred-slogan {
+.bred-hero .bred-slogan {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,25 +192,68 @@ button {
   top: -5.5em;
 }
 
-.bred-slogan h2 {
+.bred-hero .bred-slogan h2 {
   color: var(--bred-yellow);
   line-height: 0;
 }
 
-.bred-slogan h3 {
+.bred-hero .bred-slogan h3 {
   color: var(--bred-light-blue);
   line-height: 0;
 }
 
-.bred-slogan span {
+.bred-hero .bred-slogan span {
   color: var(--bred-white);
 }
 
-.bred-slogan svg {
+.bred-hero .bred-slogan svg {
   padding-top: 1.8em;
 }
 
-.bred-page-indicator {
+.bred-hero .bred-arrow {
+  -webkit-animation: bounce 2s infinite ease;
+          animation: bounce 2s infinite ease;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+.bred-hero .bred-page-indicator {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +268,7 @@ button {
   top: -4.5em;
 }
 
-.bred-page-indicator svg {
+.bred-hero .bred-page-indicator svg {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   height: 3em;

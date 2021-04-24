@@ -9,13 +9,21 @@ window.addEventListener('scroll', (event) => {
     // get to know if the scroll event is up or down
     const userInteraction = event.currentTarget
 
-    console.log(LAST_SCROLL_Y, userInteraction.pageYOffset)
+    //console.log(LAST_SCROLL_Y, userInteraction.pageYOffset)
 
     if (LAST_SCROLL_Y > userInteraction.pageYOffset) { // i am scrolling up
-        console.log('i am scrolling up')
+        //console.log('i am scrolling up')
+
+        // animate out the previous section
+        // take the next section
+        // animate in the previous section
     }
     else if (LAST_SCROLL_Y < userInteraction.pageYOffset) { // im am scrolling down
-        console.log('i am scrolling down')
+        //console.log('i am scrolling down')
+
+        // animate out the current section
+        // take the next section
+        // animate in the next section
     } else { // i am doing nothing
         LAST_SCROLL_Y = 0
     }

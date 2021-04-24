@@ -33,6 +33,7 @@ section {
   height: 90vh;
   display: grid;
   place-content: center;
+  overflow: hidden;
 }
 
 header {
@@ -87,7 +88,6 @@ button {
     transform: translateX(-100%);
   }
 }
-
 // EDN ANIMATION CLASSES
 
 // START COMMON CLASSES
@@ -115,6 +115,15 @@ button {
     color: var(--bred-yellow);
     margin-left: 1.2em;
   }
+}
+
+.bred-section-img {
+  position: relative;
+  top: -8rem;
+  right: -2em;
+  border-radius: var(--bred-radius);
+  -webkit-box-shadow: 8px 0px 0px 4px #ffffff;
+  box-shadow: 8px 0px 0px 4px #ffffff;
 }
 
 //The following classes indicates the badge number of the class
@@ -206,15 +215,15 @@ button {
   }
 }
 
-.bred-skills {
-  overflow: hidden;
+// .bred-skills {
+//   overflow: hidden;
 
-  .bred-atomium-img {
-    position: relative;
-    top: -8rem;
-    right: -2em;
-    border-radius: var(--bred-radius);
-    -webkit-box-shadow: 8px 0px 0px 4px #ffffff;
-    box-shadow: 8px 0px 0px 4px #ffffff;
-  }
-}
+//   .bred-atomium-img {
+//     position: relative;
+//     top: -8rem;
+//     right: -2em;
+//     border-radius: var(--bred-radius);
+//     -webkit-box-shadow: 8px 0px 0px 4px #ffffff;
+//     box-shadow: 8px 0px 0px 4px #ffffff;
+//   }
+// }

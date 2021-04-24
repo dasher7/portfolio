@@ -1,39 +1,38 @@
-let LAST_SCROLL_Y = 0
+let LAST_SCROLL_Y = 0;
+let CURRENT_SECTION_INDEX = 0;
+let SCROLL_DEBOUNCE = true;
 
-window.addEventListener('scroll', (event) => {
+window.addEventListener("scroll", (event) => {
+  if (SCROLL_DEBOUNCE) {
+    SCROLL_DEBOUNCE = false;
 
-    // get all the section in index.html page
-    const allSections = document.getElementsByTagName('section')
-    //console.log('all sections ', allSections)
+    console.log("triggered", LAST_SCROLL_Y);
 
-    // get to know if the scroll event is up or down
-    const userInteraction = event.currentTarget
-
-    //console.log(LAST_SCROLL_Y, userInteraction.pageYOffset)
+    const allSections = document.getElementsByTagName("section"); // get all the section in index.html page
+    const userInteraction = event.currentTarget; // get to know if the scroll event is up or down
 
     if (LAST_SCROLL_Y > userInteraction.pageYOffset) { // i am scrolling up
-        //console.log('i am scrolling up')
-
-        // animate out the previous section
-        // take the next section
-        // animate in the previous section
-    }
-    else if (LAST_SCROLL_Y < userInteraction.pageYOffset) { // im am scrolling down
-        //console.log('i am scrolling down')
-
-        // animate out the current section
-        // take the next section
-        // animate in the next section
+        console.log('i am scrolling up')
+        allSections[CURRENT_SECTION_INDEX].style.display = "none";
+        allSections[CURRENT_SECTION_INDEX - 1].scrollIntoView();
+        CURRENT_SECTION_INDEX = CURRENT_SECTION_INDEX - 1;
+    } else if (LAST_SCROLL_Y < userInteraction.pageYOffset) { // im am scrolling down
+        console.log('i am scrolling down')
+        allSections[CURRENT_SECTION_INDEX].style.display = "none";
+        allSections[CURRENT_SECTION_INDEX + 1].scrollIntoView();
+        CURRENT_SECTION_INDEX = CURRENT_SECTION_INDEX + 1;
     } else { // i am doing nothing
-        LAST_SCROLL_Y = 0
+        console.log('i am scrolling none')
+        LAST_SCROLL_Y = 0;
     }
 
     // set the lAST_SCROLL_Y value
-    LAST_SCROLL_Y = userInteraction.pageYOffset
+    LAST_SCROLL_Y = userInteraction.pageYOffset;
 
-    // const width = document.body.Width
-    // const heroSection = document.querySelector('.bred-hero')
-    // const bredSlogan = document.querySelector('.bred-slogan')
-    // heroSection.classList.add('slide-right')
-    //heroSection[0].style.display = 'none'
-})
+    // change debounce value
+    setTimeout(() => {
+      SCROLL_DEBOUNCE = true;
+    }, 200);
+
+  }
+});

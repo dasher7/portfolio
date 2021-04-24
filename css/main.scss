@@ -26,6 +26,7 @@ body {
 
 img {
   width: 100%;
+  overflow: hidden;
 }
 
 // KEEP AN EYE: this is due to header height and avoid bigger size than 100vh (causes scroll)
@@ -34,6 +35,8 @@ section {
   display: grid;
   place-content: center;
   overflow: hidden;
+  position: relative;
+  top: -55px;
 }
 
 header {
@@ -55,10 +58,6 @@ header {
 
 button {
   border: none;
-}
-
-#Group_79 {
-  background-color: #f9da6f;
 }
 
 // START ANIMATION CLASSES
@@ -128,6 +127,21 @@ button {
   border-radius: var(--bred-radius);
   -webkit-box-shadow: 8px 0px 0px 4px #ffffff;
   box-shadow: 8px 0px 0px 4px #ffffff;
+}
+
+// The following classes indicates the page you are looking to
+.bred-page-indicator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  bottom: -80%;
+
+  svg {
+    transform: rotate(-90deg);
+    height: 3em;
+    width: 5em;
+  }
 }
 
 //The following classes indicates the badge number of the class
@@ -225,18 +239,16 @@ button {
       }
     }
   }
+}
 
-  .bred-page-indicator {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-    top: -4.5em;
+.bred-skills {
+  display: none;
+}
 
-    svg {
-      transform: rotate(-90deg);
-      height: 3em;
-      width: 5em;
-    }
-  }
+.bred-about {
+  display: none;
+}
+
+.bred-scarlatte {
+  display: none;
 }

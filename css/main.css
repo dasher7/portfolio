@@ -20,6 +20,7 @@ body {
 
 img {
   width: 100%;
+  overflow: hidden;
 }
 
 section {
@@ -28,6 +29,8 @@ section {
   display: grid;
   place-content: center;
   overflow: hidden;
+  position: relative;
+  top: -55px;
 }
 
 header {
@@ -59,10 +62,6 @@ header svg {
 
 button {
   border: none;
-}
-
-#Group_79 {
-  background-color: #f9da6f;
 }
 
 .slide-right {
@@ -129,6 +128,28 @@ button {
   border-radius: var(--bred-radius);
   -webkit-box-shadow: 8px 0px 0px 4px #ffffff;
   box-shadow: 8px 0px 0px 4px #ffffff;
+}
+
+.bred-page-indicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: -80%;
+}
+
+.bred-page-indicator svg {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  height: 3em;
+  width: 5em;
 }
 
 .bred-page-indicator-badge {
@@ -257,25 +278,15 @@ button {
   }
 }
 
-.bred-hero .bred-page-indicator {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  top: -4.5em;
+.bred-skills {
+  display: none;
 }
 
-.bred-hero .bred-page-indicator svg {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  height: 3em;
-  width: 5em;
+.bred-about {
+  display: none;
+}
+
+.bred-scarlatte {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

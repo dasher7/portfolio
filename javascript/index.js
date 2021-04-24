@@ -1,38 +1,41 @@
-let LAST_SCROLL_Y = 0;
-let CURRENT_SECTION_INDEX = 0;
+var CURRENT_SECTION_INDEX = 0;
 let SCROLL_DEBOUNCE = true;
 
-window.addEventListener("scroll", (event) => {
+window.addEventListener("wheel", (event) => {
+
   if (SCROLL_DEBOUNCE) {
     SCROLL_DEBOUNCE = false;
+    //debugger
+    let hero = document.querySelector('.bred-hero')
+    let skills = document.querySelector('.bred-skills')
+    let about = document.querySelector('.bred-about')
+    let scarlatte = document.querySelector('.bred-scarlatte')
+    const allSections = new Array(hero, skills, about, scarlatte)
+    console.log(allSections)
+    // hero.innerHTML = skills.innerHTML
 
-    console.log("triggered", LAST_SCROLL_Y);
+    if (event.deltaY < 0) { // scrolling up
 
-    const allSections = document.getElementsByTagName("section"); // get all the section in index.html page
-    const userInteraction = event.currentTarget; // get to know if the scroll event is up or down
+      if ( CURRENT_SECTION_INDEX === 0 ) return
+      if (CURRENT_SECTION_INDEX - 1 <= allSections.length) {
+        hero.innerHTML = allSections[CURRENT_SECTION_INDEX - 1].innerHTML;
+      }
+      CURRENT_SECTION_INDEX !== 0 && (CURRENT_SECTION_INDEX--)
 
-    if (LAST_SCROLL_Y > userInteraction.pageYOffset) { // i am scrolling up
-        console.log('i am scrolling up')
-        allSections[CURRENT_SECTION_INDEX].style.display = "none";
-        allSections[CURRENT_SECTION_INDEX - 1].scrollIntoView();
-        CURRENT_SECTION_INDEX = CURRENT_SECTION_INDEX - 1;
-    } else if (LAST_SCROLL_Y < userInteraction.pageYOffset) { // im am scrolling down
-        console.log('i am scrolling down')
-        allSections[CURRENT_SECTION_INDEX].style.display = "none";
-        allSections[CURRENT_SECTION_INDEX + 1].scrollIntoView();
-        CURRENT_SECTION_INDEX = CURRENT_SECTION_INDEX + 1;
-    } else { // i am doing nothing
-        console.log('i am scrolling none')
-        LAST_SCROLL_Y = 0;
+    } else if (event.deltaY > 0) { // scrolling down
+      
+      if ( CURRENT_SECTION_INDEX === allSections.length ) return
+      if (CURRENT_SECTION_INDEX + 1 !== allSections.length) {
+        hero.innerHTML = allSections[CURRENT_SECTION_INDEX + 1].innerHTML;
+      }
+      CURRENT_SECTION_INDEX !== allSections.length && (CURRENT_SECTION_INDEX++)
+      
     }
-
-    // set the lAST_SCROLL_Y value
-    LAST_SCROLL_Y = userInteraction.pageYOffset;
-
+    
     // change debounce value
     setTimeout(() => {
       SCROLL_DEBOUNCE = true;
-    }, 200);
+    }, 500);
 
-  }
+ }
 });

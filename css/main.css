@@ -8,6 +8,7 @@
   --bred-mobile-bg-blue-gradient-start: #1f3b4d;
   --bred-mobile-bg-blue-gradient-end: ##060c0f;
   --bred-font: "Poppins", sans-serif;
+  --bred-radius: 8px;
 }
 
 body {
@@ -23,6 +24,9 @@ img {
 
 section {
   height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
 }
 
 header {
@@ -50,6 +54,79 @@ header h1 {
 header svg {
   height: 2em;
   width: 2em;
+}
+
+button {
+  border: none;
+}
+
+.bred-section-slogan {
+  line-height: 0px;
+  padding: 1.2em;
+  margin-bottom: 2.5em;
+  position: relative;
+  z-index: 10;
+}
+
+.bred-section-slogan h2 {
+  font-size: 3em;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+.bred-section-slogan .italic {
+  font-style: italic;
+  color: var(--bred-white);
+}
+
+.bred-section-slogan .bold {
+  font-weight: bolder;
+  color: var(--bred-yellow);
+  margin-left: 1.2em;
+}
+
+.bred-page-indicator-badge {
+  height: 4rem;
+  width: 4rem;
+  background-color: var(--bred-light-blue);
+  border-radius: var(--bred-radius);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  position: relative;
+  top: -150px;
+  right: -80%;
+}
+
+.bred-page-indicator-badge span {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--bred-blue);
+}
+
+.bred-cta-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bred-more-info-button {
+  position: relative;
+  background-color: var(--bred-light-blue);
+  color: var(--bred-blue);
+  border-radius: 30px;
+  height: 3em;
+  width: 12em;
+  font-weight: 900;
+  bottom: 100px;
+}
+
+.bred-more-info-button span {
+  font-size: 1.5em;
 }
 
 .bred-lightbulb-wrapper .bred-lightbulb {
@@ -111,5 +188,14 @@ header svg {
           transform: rotate(-90deg);
   height: 3em;
   width: 5em;
+}
+
+.bred-skills .bred-atomium-img {
+  position: relative;
+  top: -8rem;
+  right: -2em;
+  border-radius: var(--bred-radius);
+  -webkit-box-shadow: 8px 0px 0px 4px #ffffff;
+  box-shadow: 8px 0px 0px 4px #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

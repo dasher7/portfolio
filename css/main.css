@@ -190,6 +190,10 @@ button {
   width: 5em;
 }
 
+.bred-skills {
+  overflow: hidden;
+}
+
 .bred-skills .bred-atomium-img {
   position: relative;
   top: -8rem;

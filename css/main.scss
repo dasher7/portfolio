@@ -40,6 +40,12 @@ main {
   top: -55px;
 }
 
+main {
+  background: url("../svg/radials_with_stars.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -191,8 +197,26 @@ button {
   //image should be changed due to export error for the lightbulb wire
   .bred-lightbulb-wrapper {
     .bred-lightbulb {
+      width: 40%;
       position: relative;
-      bottom: 3em;
+      bottom: -2em;
+      left: 8em;
+      z-index: 2;
+      display: grid;
+      place-content: center;
+    }
+    .bred-clouds {
+      position: relative;
+      z-index: 3;
+      bottom: 8em;
+      left: 1em;
+    }
+    .bred-stars {
+      position: relative;
+      z-index: 4;
+      bottom: 35em;
+      left: 2em;
+      opacity: 0.5;
     }
   }
 
@@ -200,9 +224,9 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 3;
+    z-index: 5;
     position: relative;
-    top: -5.5em;
+    bottom: 39em;
 
     h2 {
       color: var(--bred-yellow);

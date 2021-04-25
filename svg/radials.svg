@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="449" height="444" viewBox="0 0 449 444">
+  <defs>
+    <filter id="radial_1" x="160.5" y="150.5" width="139" height="138" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#ddeb21" flood-opacity="0.851"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="radials" transform="translate(24 -136)">
+    <ellipse id="radial_9" cx="224.5" cy="222" rx="224.5" ry="222" transform="translate(-24 136)" fill="#0f1e26"/>
+    <ellipse id="radial_8" cx="211" cy="208.5" rx="211" ry="208.5" transform="translate(-12 149)" fill="#152833"/>
+    <ellipse id="radial_7" cx="194.5" cy="192.5" rx="194.5" ry="192.5" transform="translate(5 165)" fill="#1a3140"/>
+    <ellipse id="radial_6" cx="182.5" cy="180" rx="182.5" ry="180" transform="translate(17 176)" fill="#244459"/>
+    <ellipse id="radial_5" cx="167" cy="165" rx="167" ry="165" transform="translate(33 190)" fill="#294e66"/>
+    <ellipse id="radial_4" cx="149.5" cy="148" rx="149.5" ry="148" transform="translate(52 206)" fill="#2e5873"/>
+    <ellipse id="radial_3" cx="130.5" cy="129" rx="130.5" ry="129" transform="translate(70 226)" fill="#336180"/>
+    <path id="radial_2" d="M104.5,0C162.214,0,209,46.562,209,104S162.214,208,104.5,208,0,161.438,0,104,46.786,0,104.5,0Z" transform="translate(98 251)" fill="#386c8c"/>
+    <g transform="matrix(1, 0, 0, 1, -24, 136)" filter="url(#radial_1)">
+      <ellipse id="radial_1-2" data-name="radial_1" cx="62" cy="61.5" rx="62" ry="61.5" transform="translate(163 153)" fill="rgba(230,224,26,0.1)"/>
+    </g>
+  </g>
+</svg>

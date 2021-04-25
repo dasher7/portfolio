@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="351" height="605" viewBox="0 0 351 605">
+  <g id="stars" transform="translate(-13 -95)">
+    <ellipse id="star_1" cx="3" cy="2.5" rx="3" ry="2.5" transform="translate(90 121)" fill="#fff"/>
+    <ellipse id="star_1-2" data-name="star_1" cx="2.5" cy="2" rx="2.5" ry="2" transform="translate(26 171)" fill="#fff"/>
+    <circle id="star_2" cx="1.5" cy="1.5" r="1.5" transform="translate(237 95)" fill="#fff"/>
+    <circle id="star_3" cx="2" cy="2" r="2" transform="translate(305 126)" fill="#fff"/>
+    <circle id="star_4" cx="3" cy="3" r="3" transform="translate(349 130)" fill="#fff"/>
+    <ellipse id="star_6" cx="2" cy="1.5" rx="2" ry="1.5" transform="translate(360 535)" fill="#fff"/>
+    <circle id="star_9" cx="3" cy="3" r="3" transform="translate(31 535)" fill="#fff"/>
+    <circle id="star_8" cx="3" cy="3" r="3" transform="translate(13 668)" fill="#fff"/>
+    <circle id="star_7" cx="3" cy="3" r="3" transform="translate(299 694)" fill="#fff"/>
+  </g>
+</svg>

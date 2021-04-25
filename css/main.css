@@ -34,6 +34,12 @@ main {
   top: -55px;
 }
 
+main {
+  background: url("../svg/radials_with_stars.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,8 +204,29 @@ button {
 }
 
 .bred-main .bred-lightbulb-wrapper .bred-lightbulb {
+  width: 40%;
   position: relative;
-  bottom: 3em;
+  bottom: -2em;
+  left: 8em;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.bred-main .bred-lightbulb-wrapper .bred-clouds {
+  position: relative;
+  z-index: 3;
+  bottom: 8em;
+  left: 1em;
+}
+
+.bred-main .bred-lightbulb-wrapper .bred-stars {
+  position: relative;
+  z-index: 4;
+  bottom: 35em;
+  left: 2em;
+  opacity: 0.5;
 }
 
 .bred-main .bred-slogan {
@@ -213,9 +240,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 3;
+  z-index: 5;
   position: relative;
-  top: -5.5em;
+  bottom: 39em;
 }
 
 .bred-main .bred-slogan h2 {

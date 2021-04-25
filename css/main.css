@@ -203,30 +203,42 @@ button {
   font-size: 1.5em;
 }
 
+.bred-main .bred-lightbulb-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .bred-main .bred-lightbulb-wrapper .bred-lightbulb {
   width: 40%;
-  position: relative;
-  bottom: -2em;
-  left: 8em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 38em;
+  margin: auto;
   z-index: 2;
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
 }
 
 .bred-main .bred-lightbulb-wrapper .bred-clouds {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   z-index: 3;
-  bottom: 8em;
-  left: 1em;
-}
-
-.bred-main .bred-lightbulb-wrapper .bred-stars {
-  position: relative;
-  z-index: 4;
-  bottom: 35em;
-  left: 2em;
-  opacity: 0.5;
 }
 
 .bred-main .bred-slogan {
@@ -240,9 +252,12 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   z-index: 5;
   position: relative;
-  bottom: 39em;
+  bottom: 7em;
 }
 
 .bred-main .bred-slogan h2 {

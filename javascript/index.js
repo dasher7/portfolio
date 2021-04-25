@@ -65,6 +65,7 @@ window.addEventListener("touchstart", (event) => {
 
 window.addEventListener("touchmove", (event) => {
 
+  const main = document.querySelector('.bred-main')
   let hero = document.querySelector('.bred-hero')
   let skills = document.querySelector('.bred-skills')
   let about = document.querySelector('.bred-about')
@@ -81,7 +82,7 @@ window.addEventListener("touchmove", (event) => {
 
       if ( CURRENT_SECTION_INDEX === allSections.length ) return
       if (CURRENT_SECTION_INDEX + 1 !== allSections.length) {
-        hero.innerHTML = allSections[CURRENT_SECTION_INDEX + 1].innerHTML;
+        main.innerHTML = allSections[CURRENT_SECTION_INDEX + 1].innerHTML;
       }
       CURRENT_SECTION_INDEX !== allSections.length && (CURRENT_SECTION_INDEX++)
 
@@ -89,7 +90,7 @@ window.addEventListener("touchmove", (event) => {
       
       if ( CURRENT_SECTION_INDEX === 0 ) return
       if (CURRENT_SECTION_INDEX - 1 <= allSections.length) {
-        hero.innerHTML = allSections[CURRENT_SECTION_INDEX - 1].innerHTML;
+        main.innerHTML = allSections[CURRENT_SECTION_INDEX - 1].innerHTML;
       }
       CURRENT_SECTION_INDEX !== 0 && (CURRENT_SECTION_INDEX--)
 

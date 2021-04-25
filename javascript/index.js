@@ -3,6 +3,16 @@ let SCROLL_DEBOUNCE = true;
 let INITIAL_TOUCH_Y = 0
 
 /**
+ * START on load
+ */
+window.addEventListener("load", (event) => {
+  console.log('loaded')
+  const main = document.querySelector('.bred-main')
+  let hero = document.querySelector('.bred-hero')
+  main.innerHTML = hero.innerHTML
+})
+
+/**
  * START section for scroll/wheel event on desktop
  */
 window.addEventListener("wheel", (event) => {
@@ -11,17 +21,20 @@ window.addEventListener("wheel", (event) => {
 
     SCROLL_DEBOUNCE = false;
 
+    const main = document.querySelector('.bred-main')
     let hero = document.querySelector('.bred-hero')
     let skills = document.querySelector('.bred-skills')
     let about = document.querySelector('.bred-about')
     let scarlatte = document.querySelector('.bred-scarlatte')
     const allSections = new Array(hero, skills, about, scarlatte)
+    //console.log('allSections', allSections)
 
     if (event.deltaY < 0) { // scrolling up
 
       if ( CURRENT_SECTION_INDEX === 0 ) return
       if (CURRENT_SECTION_INDEX - 1 <= allSections.length) {
-        hero.innerHTML = allSections[CURRENT_SECTION_INDEX - 1].innerHTML;
+        console.log('allSections', allSections)
+        main.innerHTML = allSections[CURRENT_SECTION_INDEX - 1].innerHTML;
       }
       CURRENT_SECTION_INDEX !== 0 && (CURRENT_SECTION_INDEX--)
 
@@ -29,7 +42,7 @@ window.addEventListener("wheel", (event) => {
       
       if ( CURRENT_SECTION_INDEX === allSections.length ) return
       if (CURRENT_SECTION_INDEX + 1 !== allSections.length) {
-        hero.innerHTML = allSections[CURRENT_SECTION_INDEX + 1].innerHTML;
+        main.innerHTML = allSections[CURRENT_SECTION_INDEX + 1].innerHTML;
       }
       CURRENT_SECTION_INDEX !== allSections.length && (CURRENT_SECTION_INDEX++)
       

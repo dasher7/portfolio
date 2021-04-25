@@ -23,7 +23,8 @@ img {
   overflow: hidden;
 }
 
-section {
+section,
+main {
   height: 90vh;
   display: -ms-grid;
   display: grid;
@@ -196,12 +197,12 @@ button {
   font-size: 1.5em;
 }
 
-.bred-hero .bred-lightbulb-wrapper .bred-lightbulb {
+.bred-main .bred-lightbulb-wrapper .bred-lightbulb {
   position: relative;
   bottom: 3em;
 }
 
-.bred-hero .bred-slogan {
+.bred-main .bred-slogan {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,25 +218,25 @@ button {
   top: -5.5em;
 }
 
-.bred-hero .bred-slogan h2 {
+.bred-main .bred-slogan h2 {
   color: var(--bred-yellow);
   line-height: 0;
 }
 
-.bred-hero .bred-slogan h3 {
+.bred-main .bred-slogan h3 {
   color: var(--bred-light-blue);
   line-height: 0;
 }
 
-.bred-hero .bred-slogan span {
+.bred-main .bred-slogan span {
   color: var(--bred-white);
 }
 
-.bred-hero .bred-slogan svg {
+.bred-main .bred-slogan svg {
   padding-top: 1.8em;
 }
 
-.bred-hero .bred-arrow {
+.bred-main .bred-arrow {
   -webkit-animation: bounce 2s infinite ease;
           animation: bounce 2s infinite ease;
 }
@@ -276,6 +277,10 @@ button {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
   }
+}
+
+.bred-hero {
+  display: none;
 }
 
 .bred-skills {

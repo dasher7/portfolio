@@ -30,7 +30,8 @@ img {
 }
 
 // KEEP AN EYE: this is due to header height and avoid bigger size than 100vh (causes scroll)
-section {
+section,
+main {
   height: 90vh;
   display: grid;
   place-content: center;
@@ -186,7 +187,7 @@ button {
 }
 // END COMMON CLASSES
 
-.bred-hero {
+.bred-main {
   //image should be changed due to export error for the lightbulb wire
   .bred-lightbulb-wrapper {
     .bred-lightbulb {
@@ -239,6 +240,10 @@ button {
       }
     }
   }
+}
+
+.bred-hero {
+  display: none;
 }
 
 .bred-skills {

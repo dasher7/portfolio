@@ -17,16 +17,15 @@ body {
   margin: 0;
   height: 100vh;
   font-family: var(--bred-font);
-  background: radial-gradient(
-    circle,
-    rgba(31, 59, 77, 1) 0%,
-    rgba(6, 12, 15, 1) 75%
-  );
 }
 
 img {
   width: 100%;
   overflow: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 // KEEP AN EYE: this is due to header height and avoid bigger size than 100vh (causes scroll)
@@ -101,7 +100,29 @@ button {
 
 // START COMMON CLASSES
 
+#scroll {
+  text-transform: uppercase;
+  text-decoration: underline;
+  position: absolute;
+  bottom: 3rem;
+  color: var(--bred-white);
+  transform: rotate(-90deg);
+}
+
+#highlight {
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--bred-yellow);
+}
+
+#bold {
+  font-weight: 900;
+  color: var(--bred-white);
+}
+
 //The following class indicates the title of the section
+
 .bred-section-slogan {
   line-height: 0px;
   padding: 1.2em;
@@ -173,11 +194,16 @@ button {
 .bred-cta-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 //The following classes indicates the show more cta
 .bred-more-info-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  text-align: center;
   background-color: var(--bred-light-blue);
   color: var(--bred-blue);
   border-radius: 30px;
@@ -191,6 +217,14 @@ button {
   }
 }
 // END COMMON CLASSES
+
+.bred-landing {
+  background: radial-gradient(
+    circle,
+    rgba(31, 59, 77, 1) 0%,
+    rgba(6, 12, 15, 1) 75%
+  );
+}
 
 .bred-main {
   //image should be changed due to export error for the lightbulb wire
@@ -291,4 +325,57 @@ button {
 
 .bred-scarlatte {
   display: none;
+}
+
+.bred-skills-page {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(#266187, #060c0f);
+
+  .bred-header {
+    width: 85%;
+    z-index: 2;
+    position: absolute;
+  }
+
+  .bred-page-image {
+    position: absolute;
+    width: 200%;
+    z-index: 1;
+  }
+
+  .bred-section-slogan {
+    position: absolute;
+    top: 45%;
+  }
+
+  .bred-slogan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    top: 75%;
+    color: var(--bred-white);
+
+    .bred-arrow {
+      svg {
+        margin: 0px 8px;
+        height: 14px;
+        width: 14px;
+      }
+    }
+  }
+
+  .bred-page-image-desc {
+    position: absolute;
+    right: -31%;
+    top: 64%;
+    z-index: 2;
+    transform: rotate(90deg);
+    color: var(--bred-white);
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
 }

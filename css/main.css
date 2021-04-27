@@ -15,12 +15,15 @@ body {
   margin: 0;
   height: 100vh;
   font-family: var(--bred-font);
-  background: radial-gradient(circle, #1f3b4d 0%, #060c0f 75%);
 }
 
 img {
   width: 100%;
   overflow: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 section,
@@ -101,6 +104,28 @@ button {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
+}
+
+#scroll {
+  text-transform: uppercase;
+  text-decoration: underline;
+  position: absolute;
+  bottom: 3rem;
+  color: var(--bred-white);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+#highlight {
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--bred-yellow);
+}
+
+#bold {
+  font-weight: 900;
+  color: var(--bred-white);
 }
 
 .bred-section-slogan {
@@ -186,10 +211,23 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bred-more-info-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
+  text-align: center;
   background-color: var(--bred-light-blue);
   color: var(--bred-blue);
   border-radius: 30px;
@@ -201,6 +239,10 @@ button {
 
 .bred-more-info-button span {
   font-size: 1.5em;
+}
+
+.bred-landing {
+  background: radial-gradient(circle, #1f3b4d 0%, #060c0f 75%);
 }
 
 .bred-main .bred-lightbulb-wrapper {
@@ -335,5 +377,67 @@ button {
 
 .bred-scarlatte {
   display: none;
+}
+
+.bred-skills-page {
+  position: relative;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#266187), to(#060c0f));
+  background: linear-gradient(#266187, #060c0f);
+}
+
+.bred-skills-page .bred-header {
+  width: 85%;
+  z-index: 2;
+  position: absolute;
+}
+
+.bred-skills-page .bred-page-image {
+  position: absolute;
+  width: 200%;
+  z-index: 1;
+}
+
+.bred-skills-page .bred-section-slogan {
+  position: absolute;
+  top: 45%;
+}
+
+.bred-skills-page .bred-slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 0 auto;
+  top: 75%;
+  color: var(--bred-white);
+}
+
+.bred-skills-page .bred-slogan .bred-arrow svg {
+  margin: 0px 8px;
+  height: 14px;
+  width: 14px;
+}
+
+.bred-skills-page .bred-page-image-desc {
+  position: absolute;
+  right: -31%;
+  top: 64%;
+  z-index: 2;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: var(--bred-white);
+  letter-spacing: 1px;
+  font-size: 10px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -121,6 +121,15 @@ button {
   color: var(--bred-white);
 }
 
+#numeric-bold {
+  font-weight: 550;
+}
+
+#title-italic {
+  font-style: italic;
+  text-decoration: underline;
+}
+
 //The following class indicates the title of the section
 
 .bred-section-slogan {
@@ -377,5 +386,97 @@ button {
     color: var(--bred-white);
     letter-spacing: 1px;
     font-size: 10px;
+  }
+}
+
+.bred-skills-page-details {
+  color: var(--bred-blue);
+  padding: 1em;
+
+  .bred-skills-title {
+    font-size: 3em;
+  }
+
+  .bred-skills-container {
+    margin: 0 1em;
+  }
+
+  .bred-projects-container {
+    margin: 0 1em;
+  }
+
+  .bred-skills-desc-contianer {
+    .bred-skills-desc {
+      margin-top: 1em;
+    }
+  }
+
+  .bred-skills-badge-container {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    .bred-skills-badge {
+      border: 3px solid var(--bred-blue);
+      border-radius: 40px;
+      padding: 1em;
+      margin: 0.2em;
+    }
+  }
+
+  .bred-projects-container {
+    .bred-projects-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      font-size: 3em;
+      span {
+        margin: 10px;
+      }
+    }
+    .bred-projects-desc-container {
+      .bred-projects-desc {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  .bred-image-projects-container {
+    .bred-image-projects {
+      position: relative;
+      margin-top: 2em;
+      width: 120%;
+      right: 50px;
+      border-radius: var(--bred-radius);
+      -webkit-box-shadow: 8px 0px 0px 4px var(--bred-blue);
+      box-shadow: -19px 0px 0px 8px var(--bred-blue);
+    }
+  }
+}
+
+.bred-footer {
+  background-color: var(--bred-blue);
+  color: var(--bred-white);
+  min-height: 15em;
+  font-size: 0.8em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .bred-footer-link {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    line-height: 2.4em;
+  }
+
+  .bred-footer-copyright {
+    font-size: 0.7em;
   }
 }

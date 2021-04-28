@@ -403,6 +403,7 @@ button {
 
 .bred-skills-page .bred-page-image {
   position: absolute;
+  overflow: hidden;
   width: 200%;
   z-index: 1;
 }

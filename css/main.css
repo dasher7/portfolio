@@ -78,6 +78,18 @@ button {
   border: none;
 }
 
+label {
+  text-decoration: underline;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 3px solid var(--bred-blue);
+  margin: 2em 0;
+  width: 15em;
+}
+
 .slide-right {
   -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -130,6 +142,11 @@ button {
 #bold {
   font-weight: 900;
   color: var(--bred-white);
+}
+
+#bold-black {
+  font-weight: 900;
+  color: var(--bred-blue);
 }
 
 #numeric-bold {
@@ -467,6 +484,68 @@ button {
 
 .bred-skills-page-details .bred-skills-container {
   margin: 0 1em;
+}
+
+.bred-skills-page-details .bred-skills-container .bred-contact-form-wrapper {
+  padding: 1em 0;
+}
+
+.bred-skills-page-details .bred-skills-container .bred-contact-form-wrapper .bred-contact-form {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.bred-skills-page-details .bred-skills-container .bred-contact-form-wrapper .bred-contact-form .bred-contact-form-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+}
+
+.bred-skills-page-details .bred-skills-container .bred-contact-form-wrapper .bred-contact-form-send-button {
+  font-weight: 700;
+  color: var(--bred-blue);
+  border: 3px solid var(--bred-blue);
+  border-radius: 24px;
+  width: 8em;
+  height: 3em;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.bred-skills-page-details .bred-skills-container .bred-profile-image {
+  border-radius: 8px;
+}
+
+.bred-skills-page-details .bred-skills-container .bred-image-desc {
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bred-skills-page-details .bred-skills-container .bred-image-desc span {
+  margin: 2px;
 }
 
 .bred-skills-page-details .bred-projects-container {

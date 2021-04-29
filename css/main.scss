@@ -68,6 +68,18 @@ button {
   border: none;
 }
 
+label {
+  text-decoration: underline;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 3px solid var(--bred-blue);
+  margin: 2em 0;
+  width: 15em;
+}
+
 // START ANIMATION CLASSES
 .slide-right {
   -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -121,6 +133,11 @@ button {
 #bold {
   font-weight: 900;
   color: var(--bred-white);
+}
+
+#bold-black {
+  font-weight: 900;
+  color: var(--bred-blue);
 }
 
 #numeric-bold {
@@ -403,6 +420,45 @@ button {
 
   .bred-skills-container {
     margin: 0 1em;
+
+    .bred-contact-form-wrapper {
+      padding: 1em 0;
+      .bred-contact-form {
+        display: grid;
+        place-content: center;
+        .bred-contact-form-label {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start !important;
+          align-items: flex-start !important;
+        }
+      }
+      .bred-contact-form-send-button {
+        font-weight: 700;
+        color: var(--bred-blue);
+        border: 3px solid var(--bred-blue);
+        border-radius: 24px;
+        width: 8em;
+        height: 3em;
+        background-color: transparent;
+        margin: 0 auto;
+      }
+    }
+
+    .bred-profile-image {
+      border-radius: 8px;
+    }
+
+    .bred-image-desc {
+      font-size: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      span {
+        margin: 2px;
+      }
+    }
   }
 
   .bred-projects-container {

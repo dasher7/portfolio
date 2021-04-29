@@ -11,9 +11,11 @@
   --bred-font: "Poppins", sans-serif;
   --bred-radius: 8px;
 }
+html {
+  overflow-x: hidden;
+}
 
 body {
-  //overflow: hidden;
   margin: 0;
   height: 100vh;
   font-family: var(--bred-font);
@@ -337,6 +339,7 @@ button {
 }
 
 .bred-skills-page {
+  overflow: hidden;
   position: relative;
   height: 100vh;
   background: linear-gradient(#266187, #060c0f);
@@ -349,7 +352,7 @@ button {
 
   .bred-page-image {
     position: absolute;
-    overflow: hidden;
+    overflow: unset;
     width: 200%;
     z-index: 1;
   }
